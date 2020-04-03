@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be found
 // in the LICENSE file.
 
-package jetrender
+package jetrenderer
 
 import (
 	"io"
@@ -43,7 +43,7 @@ type Renderer struct {
 	beforeRender BeforeRender
 }
 
-// New returns a render with the given set.
+// New returns a renderer with the given set.
 func New(set *jet.Set) *Renderer {
 	return &Renderer{
 		Set: set,

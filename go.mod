@@ -1,4 +1,4 @@
-module github.com/clevergo/jetrender
+module github.com/clevergo/jetrenderer
 
 go 1.13
 

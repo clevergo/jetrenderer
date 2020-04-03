@@ -8,13 +8,13 @@ import (
 
 	"github.com/CloudyKit/jet/v3"
 	"github.com/clevergo/clevergo"
-	"github.com/clevergo/jetrender"
+	"github.com/clevergo/jetrenderer"
 )
 
 func main() {
 	set := jet.NewHTMLSet("./views")
 	set.SetDevelopmentMode(true) // debug
-	renderer := jetrender.New(set)
+	renderer := jetrenderer.New(set)
 	renderer.SetBeforeRender(func(w io.Writer, name string, vars jet.VarMap, data interface{}, ctx *clevergo.Context) error {
 		vars.SetFunc("title", jet.Func(func(args jet.Arguments) reflect.Value {
 			args.RequireNumOfArguments("title", 1, 1)

@@ -1,9 +1,9 @@
 # Render implementation for Jet template engine
-[![Build Status](https://travis-ci.org/clevergo/jetrender.svg?branch=master)](https://travis-ci.org/clevergo/jetrender)
-[![Coverage Status](https://coveralls.io/repos/github/clevergo/jetrender/badge.svg?branch=master)](https://coveralls.io/github/clevergo/jetrender?branch=master)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue)](https://pkg.go.dev/github.com/clevergo/jetrender)
-[![Go Report Card](https://goreportcard.com/badge/github.com/clevergo/jetrender)](https://goreportcard.com/report/github.com/clevergo/jetrender)
-[![Release](https://img.shields.io/github/release/clevergo/jetrender.svg?style=flat-square)](https://github.com/clevergo/jetrender/releases)
+[![Build Status](https://travis-ci.org/clevergo/jetrenderer.svg?branch=master)](https://travis-ci.org/clevergo/jetrenderer)
+[![Coverage Status](https://coveralls.io/repos/github/clevergo/jetrenderer/badge.svg?branch=master)](https://coveralls.io/github/clevergo/jetrenderer?branch=master)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue)](https://pkg.go.dev/github.com/clevergo/jetrenderer)
+[![Go Report Card](https://goreportcard.com/badge/github.com/clevergo/jetrenderer)](https://goreportcard.com/report/github.com/clevergo/jetrenderer)
+[![Release](https://img.shields.io/github/release/clevergo/jetrenderer.svg?style=flat-square)](https://github.com/clevergo/jetrenderer/releases)
 
 ## Usage
 
@@ -19,11 +19,11 @@ import (
 
 	"github.com/CloudyKit/jet/v3"
 	"github.com/clevergo/clevergo"
-	"github.com/clevergo/jetrender"
+	"github.com/clevergo/jetrenderer"
 )
 
 func main() {
-	renderer := jetrender.New(jet.NewHTMLSet("./views"))
+	renderer := jetrenderer.New(jet.NewHTMLSet("./views"))
 	renderer.SetBeforeRender(func(w io.Writer, name string, vars jet.VarMap, data interface{}, ctx *clevergo.Context) error {
         // populate variables and functions
         // vars.Set("user", user) // user instance.

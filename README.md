@@ -3,6 +3,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/clevergo/jetrenderer/badge.svg?branch=master)](https://coveralls.io/github/clevergo/jetrenderer?branch=master)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue)](https://pkg.go.dev/github.com/clevergo/jetrenderer)
 [![Go Report Card](https://goreportcard.com/badge/github.com/clevergo/jetrenderer)](https://goreportcard.com/report/github.com/clevergo/jetrenderer)
+[![Sourcegraph](https://sourcegraph.com/github.com/clevergo/jetrenderer/-/badge.svg)](https://sourcegraph.com/github.com/clevergo/jetrenderer?badge)
 [![Release](https://img.shields.io/github/release/clevergo/jetrenderer.svg?style=flat-square)](https://github.com/clevergo/jetrenderer/releases)
 
 ## Usage

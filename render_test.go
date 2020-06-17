@@ -12,8 +12,8 @@ import (
 	"strings"
 	"testing"
 
+	"clevergo.tech/clevergo"
 	"github.com/CloudyKit/jet/v3"
-	"github.com/clevergo/clevergo"
 	"github.com/stretchr/testify/assert"
 )
 

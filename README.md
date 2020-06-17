@@ -1,9 +1,8 @@
 # Render implementation for Jet template engine
 [![Build Status](https://travis-ci.org/clevergo/jetrenderer.svg?branch=master)](https://travis-ci.org/clevergo/jetrenderer)
 [![Coverage Status](https://coveralls.io/repos/github/clevergo/jetrenderer/badge.svg?branch=master)](https://coveralls.io/github/clevergo/jetrenderer?branch=master)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue)](https://pkg.go.dev/github.com/clevergo/jetrenderer)
+[![Go.Dev reference](https://img.shields.io/badge/go.dev-reference-blue?logo=go&logoColor=white)](https://pkg.go.dev/clevergo.tech/jetrenderer?tab=doc)
 [![Go Report Card](https://goreportcard.com/badge/github.com/clevergo/jetrenderer)](https://goreportcard.com/report/github.com/clevergo/jetrenderer)
-[![Sourcegraph](https://sourcegraph.com/github.com/clevergo/jetrenderer/-/badge.svg)](https://sourcegraph.com/github.com/clevergo/jetrenderer?badge)
 [![Release](https://img.shields.io/github/release/clevergo/jetrenderer.svg?style=flat-square)](https://github.com/clevergo/jetrenderer/releases)
 
 ## Usage
@@ -19,8 +18,8 @@ import (
 	"strings"
 
 	"github.com/CloudyKit/jet/v3"
-	"github.com/clevergo/clevergo"
-	"github.com/clevergo/jetrenderer"
+	"clevergo.tech/clevergo"
+	"clevergo.tech/jetrenderer"
 )
 
 func main() {
@@ -32,13 +31,13 @@ func main() {
 		return nil
 	})
 
-	router := clevergo.NewRouter()
-	router.Renderer = renderer
-	router.Get("/", func(ctx *clevergo.Context) error {
+	app := clevergo.New()
+	app.Renderer = renderer
+	app.Get("/", func(ctx *clevergo.Context) error {
 		return ctx.Render(http.StatusOK, "index.tmpl", map[string]interface{}{
 			"message": "hello world",
 		})
 	})
-	http.ListenAndServe(":8080", router)
+	app.Run(":8080")
 }
 ```

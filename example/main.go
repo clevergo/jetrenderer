@@ -2,13 +2,12 @@ package main
 
 import (
 	"io"
-	"net/http"
 	"reflect"
 	"strings"
 
+	"clevergo.tech/clevergo"
+	"clevergo.tech/jetrenderer"
 	"github.com/CloudyKit/jet/v3"
-	"github.com/clevergo/clevergo"
-	"github.com/clevergo/jetrenderer"
 )
 
 func main() {
@@ -24,12 +23,12 @@ func main() {
 		return nil
 	})
 
-	router := clevergo.NewRouter()
-	router.Renderer = renderer
-	router.Get("/", func(ctx *clevergo.Context) error {
+	app := clevergo.New()
+	app.Renderer = renderer
+	app.Get("/", func(ctx *clevergo.Context) error {
 		return ctx.Render(200, "index.tmpl", map[string]interface{}{
 			"message": "hello world",
 		})
 	})
-	http.ListenAndServe(":8080", router)
+	app.Run(":8080")
 }

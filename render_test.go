@@ -13,7 +13,7 @@ import (
 	"testing"
 
 	"clevergo.tech/clevergo"
-	"github.com/CloudyKit/jet/v3"
+	"github.com/CloudyKit/jet/v4"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -40,7 +40,7 @@ func TestRenderer_SetBeforeRender(t *testing.T) {
 }
 
 func TestRenderer_Render(t *testing.T) {
-	r := New(jet.NewHTMLSet("./example/views"))
+	r := New(jet.NewHTMLSet("./testdata/views"))
 	// invalid template.
 	err := r.Render(nil, "404.tmpl", nil, nil)
 	assert.NotNil(t, err)

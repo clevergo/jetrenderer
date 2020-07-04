@@ -7,7 +7,7 @@
 
 ## Usage
 
-See [example](example).
+See [example](https://github.com/clevergo/examples/tree/master/jetrenderer).
 
 ```go
 package main
@@ -17,7 +17,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/CloudyKit/jet/v3"
+	"github.com/CloudyKit/jet/v4"
 	"clevergo.tech/clevergo"
 	"clevergo.tech/jetrenderer"
 )

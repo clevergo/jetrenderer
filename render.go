@@ -9,7 +9,7 @@ import (
 	"sync"
 
 	"clevergo.tech/clevergo"
-	"github.com/CloudyKit/jet/v3"
+	"github.com/CloudyKit/jet/v4"
 )
 
 var varsPool sync.Pool
@@ -43,7 +43,7 @@ type Renderer struct {
 	beforeRender BeforeRender
 }
 
-var _ clevergo.Renderer = New(jet.NewHTMLSet("./"))
+var _ clevergo.Renderer = (*Renderer)(nil)
 
 // New returns a renderer with the given set.
 func New(set *jet.Set) *Renderer {

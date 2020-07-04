@@ -1,9 +1,9 @@
 # Renderer implementation of Jet template engine
-[![Build Status](https://travis-ci.org/clevergo/jetrenderer.svg?branch=master)](https://travis-ci.org/clevergo/jetrenderer)
-[![Coverage Status](https://coveralls.io/repos/github/clevergo/jetrenderer/badge.svg?branch=master)](https://coveralls.io/github/clevergo/jetrenderer?branch=master)
-[![Go.Dev reference](https://img.shields.io/badge/go.dev-reference-blue?logo=go&logoColor=white)](https://pkg.go.dev/clevergo.tech/jetrenderer?tab=doc)
-[![Go Report Card](https://goreportcard.com/badge/github.com/clevergo/jetrenderer)](https://goreportcard.com/report/github.com/clevergo/jetrenderer)
-[![Release](https://img.shields.io/github/release/clevergo/jetrenderer.svg?style=flat-square)](https://github.com/clevergo/jetrenderer/releases)
+[![Build Status](https://img.shields.io/travis/clevergo/jetrenderer?style=for-the-badge)](https://travis-ci.org/clevergo/jetrenderer)
+[![Coverage Status](https://img.shields.io/coveralls/github/clevergo/jetrenderer?style=for-the-badge)](https://coveralls.io/github/clevergo/jetrenderer?branch=master)
+[![Go.Dev reference](https://img.shields.io/badge/go.dev-reference-blue?logo=go&logoColor=white&style=for-the-badge)](https://pkg.go.dev/clevergo.tech/jetrenderer?tab=doc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/clevergo/jetrenderer?style=for-the-badge)](https://goreportcard.com/report/github.com/clevergo/jetrenderer)
+[![Release](https://img.shields.io/github/release/clevergo/jetrenderer.svg?style=for-the-badge)](https://github.com/clevergo/jetrenderer/releases)
 
 ## Usage
 

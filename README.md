@@ -26,9 +26,9 @@ import (
 func main() {
 	renderer := jetrenderer.New(jet.NewHTMLSet("./views"))
 	renderer.SetBeforeRender(func(w io.Writer, name string, vars jet.VarMap, data interface{}, ctx *clevergo.Context) error {
-        // populate variables and functions
-        // vars.Set("user", user) // user instance.
-        // vars.SetFunc("T", translate) // i18n translator.
+		// populate variables and functions
+		// vars.Set("user", user) // user instance.
+		// vars.SetFunc("T", translate) // i18n translator.
 		return nil
 	})
 

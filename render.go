@@ -9,7 +9,7 @@ import (
 	"sync"
 
 	"clevergo.tech/clevergo"
-	"github.com/CloudyKit/jet/v4"
+	"github.com/CloudyKit/jet/v5"
 )
 
 var varsPool sync.Pool

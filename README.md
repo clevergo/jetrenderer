@@ -17,7 +17,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/CloudyKit/jet/v4"
+	"github.com/CloudyKit/jet/v5"
 	"clevergo.tech/clevergo"
 	"clevergo.tech/jetrenderer"
 )

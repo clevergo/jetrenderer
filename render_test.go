@@ -13,7 +13,7 @@ import (
 	"testing"
 
 	"clevergo.tech/clevergo"
-	"github.com/CloudyKit/jet/v4"
+	"github.com/CloudyKit/jet/v5"
 	"github.com/stretchr/testify/assert"
 )
 

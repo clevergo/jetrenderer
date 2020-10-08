@@ -1,10 +1,12 @@
 # Renderer implementation of Jet template engine
-[![Build Status](https://img.shields.io/travis/clevergo/jetrenderer?style=for-the-badge)](https://travis-ci.org/clevergo/jetrenderer)
-[![Coverage Status](https://img.shields.io/coveralls/github/clevergo/jetrenderer?style=for-the-badge)](https://coveralls.io/github/clevergo/jetrenderer?branch=master)
-[![Go.Dev reference](https://img.shields.io/badge/go.dev-reference-blue?logo=go&logoColor=white&style=for-the-badge)](https://pkg.go.dev/clevergo.tech/jetrenderer?tab=doc)
-[![Go Report Card](https://goreportcard.com/badge/github.com/clevergo/jetrenderer?style=for-the-badge)](https://goreportcard.com/report/github.com/clevergo/jetrenderer)
-[![Release](https://img.shields.io/github/release/clevergo/jetrenderer.svg?style=for-the-badge)](https://github.com/clevergo/jetrenderer/releases)
-[![Downloads](https://img.shields.io/endpoint?url=https://pkg.clevergo.tech/api/badges/downloads/month/clevergo.tech/jetrenderer&style=for-the-badge)](https://pkg.clevergo.tech/)
+[![Build Status](https://img.shields.io/travis/clevergo/jetrenderer?style=flat-square)](https://travis-ci.org/clevergo/jetrenderer)
+[![Coverage Status](https://img.shields.io/coveralls/github/clevergo/jetrenderer?style=flat-square)](https://coveralls.io/github/clevergo/jetrenderer?branch=master)
+[![Go.Dev reference](https://img.shields.io/badge/go.dev-reference-blue?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/clevergo.tech/jetrenderer?tab=doc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/clevergo/jetrenderer?style=flat-square)](https://goreportcard.com/report/github.com/clevergo/jetrenderer)
+[![Release](https://img.shields.io/github/release/clevergo/jetrenderer.svg?style=flat-square)](https://github.com/clevergo/jetrenderer/releases)
+[![Downloads](https://img.shields.io/endpoint?url=https://pkg.clevergo.tech/api/badges/downloads/total/clevergo.tech/jetrenderer&style=flat-square)](https://pkg.clevergo.tech/)
+[![Chat](https://img.shields.io/badge/chat-telegram-blue?style=flat-square)](https://t.me/clevergotech)
+[![Community](https://img.shields.io/badge/community-forum-blue?style=flat-square&color=orange)](https://forum.clevergo.tech)
 
 ## Usage
 

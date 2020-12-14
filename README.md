@@ -8,6 +8,11 @@
 [![Chat](https://img.shields.io/badge/chat-telegram-blue?style=flat-square)](https://t.me/clevergotech)
 [![Community](https://img.shields.io/badge/community-forum-blue?style=flat-square&color=orange)](https://forum.clevergo.tech)
 
+| JetRenderer | Jet |
+|---|---|
+| `v1` | `v5` |
+| `v2` | `v6` |
+
 ## Usage
 
 See [example](https://github.com/clevergo/examples/tree/master/jetrenderer).
@@ -20,13 +25,13 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/CloudyKit/jet/v5"
+	"github.com/CloudyKit/jet/v6"
 	"clevergo.tech/clevergo"
 	"clevergo.tech/jetrenderer"
 )
 
 func main() {
-	renderer := jetrenderer.New(jet.NewHTMLSet("./views"))
+	renderer := jetrenderer.New(jet.New(jet.NewOSFileSystemLoader("./views")))
 	renderer.SetBeforeRender(func(w io.Writer, name string, vars jet.VarMap, data interface{}, ctx *clevergo.Context) error {
 		// populate variables and functions
 		// vars.Set("user", user) // user instance.

@@ -13,12 +13,12 @@ import (
 	"testing"
 
 	"clevergo.tech/clevergo"
-	"github.com/CloudyKit/jet/v5"
+	"github.com/CloudyKit/jet/v6"
 	"github.com/stretchr/testify/assert"
 )
 
 func TestNew(t *testing.T) {
-	set := jet.NewHTMLSet("")
+	set := jet.NewSet(jet.NewInMemLoader())
 	r := New(set)
 	assert.Equal(t, set, r.Set)
 }
@@ -31,7 +31,7 @@ func fakeBeforeRender(callback func(), err error) BeforeRender {
 }
 
 func TestRenderer_SetBeforeRender(t *testing.T) {
-	r := New(jet.NewHTMLSet(""))
+	r := New(jet.NewSet(jet.NewInMemLoader()))
 	fn := fakeBeforeRender(func() {}, errors.New("before render test"))
 	r.SetBeforeRender(fn)
 	expected := fn(nil, "", nil, nil, nil)
@@ -40,7 +40,7 @@ func TestRenderer_SetBeforeRender(t *testing.T) {
 }
 
 func TestRenderer_Render(t *testing.T) {
-	r := New(jet.NewHTMLSet("./testdata/views"))
+	r := New(jet.NewSet(jet.NewOSFileSystemLoader("./testdata/views")))
 	// invalid template.
 	err := r.Render(nil, "404.tmpl", nil, nil)
 	assert.NotNil(t, err)
